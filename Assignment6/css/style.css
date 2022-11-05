@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+header{
+  text-align: center;
+  font-size: 40px;
+}
+.container{
+  max-width: 800px;
+  margin: 0 auto;
+}
+* {
+  box-sizing: border-box;
+}
+.tab_navigation{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.tab_navigation li{
+  display: inline-block;
+  padding: 5px 15px;
+  background: #0a6fc4;
+  min-width: 100px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.tab_navigation li.active,
+.tab_navigation li:hover{
+  background: #035091;
+}
+.tab_container_area{}
+.tab_container{
+  padding: 10px;
+  background: #035091;
+  color: #fff;
+  border-radius: 0 5px 5px 5px;
+  display: none;
+}
+
+
+.tab_navigation1{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.tab_navigation1 li{
+  display: inline-block;
+  padding: 5px 15px;
+  background: #0a6fc4;
+  min-width: 100px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.tab_navigation1 li.active,
+.tab_navigation1 li:hover{
+  background: #095091;
+}
+
+.tab_container_area {}
+.tab_container1{
+  padding: 10px;
+  background: #095091;
+  color: #fff;
+  border-radius: 0 5px 5px 5px;
+  display: none;
+}
+.accordian_box{
+  border: 1px solid grey;
+  padding: 0 15px 1px;
+  background: #e1e1e1;
+  color: #332e2e;
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+}
+/* .image {
+  display: inline;
+} */
+.image img {
+  height: 315px;
+  width: 415px;
+  margin: 10px;
+}
+.accordian {
+  max-width: 645px;
+  display: block;
+  top: 10px;
+  margin-left: 450px;
+  margin-top: -318px;
+}
+
+.accordian .card {
+  box-shadow: 0px 0px 20px #d4d4d4;
+  margin-bottom: 20px;
+  float: left;
+  width: 100%;
+}
+.accordian .card .card-header h3 {
+  cursor: pointer;
+  color: #ffffff;
+  position: relative;
+  background-color: #3343a2;
+  margin: 0;
+  padding: 15px 20px;
+}
+.accordian .card .card-header {
+  position: relative;
+}
+.accordian .card .card-header span {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  height: 25px;
+  width: 25px;
+  color: #3343a2;
+  background-color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 25px;
+  font-size: 13px;
+}
+
+.accordian .card .card-body {
+  padding: 20px;
+}
+
+.accordian .card .card-body table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.accordian .card .card-body table th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.accordian .card .card-body {
+  display: none;
+}
+/*open one card by default*/
+.accordian .card:nth-child(1) .card-body {
+  display: block;
+}
+.accordian .card .card-body p {
+  font-size: 15px;
+  line-height: 24px;
+  color: #444444;
+  margin: 0px;
+}
+.accordian_box.active{
+  background: #fff;
+}
+.acc_trigger{
+  padding: 15px 40px 15px 0;
+  margin: 0;
+  font-family: 30px;
+  position: relative;
+}
+.acc_trigger i{
+  position: absolute;
+  right:  0;
+  top: 16px;
+  font-size: 20px;
+}
+.acc_container{
+  display: none;
+}
+.acc_container p{
+  margin-top: 0px;
+  line-height: 1.6;
+}
