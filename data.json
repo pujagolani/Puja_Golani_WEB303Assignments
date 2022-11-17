@@ -1,0 +1,51 @@
+  [{
+      "movie_No":"1",
+      "category":"thriller",
+      "firstname":"scarlette",
+      "Production":"marvel",
+      "lastname":"johnsson"
+     },
+     {
+      "movie_No":"2",
+      "category":"romantic",
+      "firstname":" Dakota",
+      "Production":"DC",
+      "lastname":"jonson"
+    },
+    {
+      "movie_No":"3",
+      "category":"horror",
+      "firstname":"sadia",
+      "Production":"matt duffer",
+      "lastname":"sink"
+     },
+{
+      "movie_No":"4",
+      "category":"Animation",
+      "firstname":"oswald",
+      "Production":"HIT ENT",
+      "lastname":"Weenie"
+     },
+{
+      "movie_No":"5",
+      "category":"Drama",
+      "firstname":"salman",
+      "Production":"ABC",
+      "lastname":"Khan"
+     },
+{
+      "movie_No":"6",
+      "category":"Adventure",
+      "firstname":"emily",
+      "Production":"dany",
+      "lastname":"blunt"
+     },
+{
+      "movie_No":"7",
+      "category":"Documentry",
+      "firstname":"shushant",
+      "Production":"Dharma",
+      "lastname":"rajput"
+     }
+
+]
