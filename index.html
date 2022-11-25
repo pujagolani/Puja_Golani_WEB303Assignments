@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <head>
+      <link href="css/style.css" rel="stylesheet">
+  </head>
+    <title>Table Manager Plugin Example</title>
+    <link
+      href="https://www.jqueryscript.net/css/jquerysctipttop.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Include Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <h1>Puja Golani And All types of Movies </h1>
+    <!-- Style -->
+    <style type="text/css">
+      body {
+        font-family: "Roboto Condensed", Helvetica, sans-serif;
+        background-color: #f7f7f7;
+      }
+      .container {
+        margin: 150px auto;
+        max-width: 960px;
+      }
+      a {
+        text-decoration: none;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #bbb;
+        text-align: left;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      th {
+        background-color: #ddd;
+      }
+      th,
+      td {
+        padding: 5px;
+      }
+      button {
+        cursor: pointer;
+      }
+      /*Initial style sort*/
+      .tablemanager th.sorterHeader {
+        cursor: pointer;
+      }
+      .tablemanager th.sorterHeader:after {
+        content: " \f0dc";
+        font-family: "FontAwesome";
+      }
+      /*Style sort desc*/
+      .tablemanager th.sortingDesc:after {
+        content: " \f0dd";
+        font-family: "FontAwesome";
+      }
+      /*Style sort asc*/
+      .tablemanager th.sortingAsc:after {
+        content: " \f0de";
+        font-family: "FontAwesome";
+      }
+      /*Style disabled*/
+      
+      #for_numrows {
+        padding: 10px;
+        float: left;
+      }
+      #for_filter_by {
+        padding: 10px;
+        float: right;
+      }
+      #pagesControllers {
+        display: block;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Table start -->
+      <table class="tablemanager" id="tablemanager">
+        <thead id="emp">
+          <tr>
+            <th class="disableSort">Number</th>
+            <th>Date</th>
+            <th>Category</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Production</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody id="tableManagerTbody"></tbody>
+      </table>
+    </div>
+    <!-- External jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="./js/jquery-1.12.3.min.js"></script> -->
+    <script type="text/javascript" src="./tableManager.js"></script>
+    <script type="text/javascript">
+      // basic usage
+
+      $(document).ready(function () {
+        $.ajax({
+          url: "data.json",
+          type: "GET",
+          dataType: "JSON",
+          success: function (data) {
+            var rows = "";
+            $(data).each(function () {
+              rows +=
+                "<tr><td>" +
+                this.id +
+                "</td><td>" +
+                  this.date +
+                "</td></td>" +
+                this.category +
+                "</td></td>" +
+                this.firstname +
+                "</td><td>" +
+                this.lastname +
+                "</td><td>" +
+                  this.Production +
+                "</td></td>" +
+                this.email +
+                "</td></tr>" 
+                ;
+            });
+
+            $("#tableManagerTbody").html(rows);
+            $(".tablemanager").tablemanager({
+              firstSort: [
+                [3, 0],
+                [2, 0],
+                [1, "asc"],
+              ],
+              //   disable: ["last"],
+              dateFormat: [[5, "mm-dd-yyyy"]],
+              debug: true,
+            });
+          },
+          error: function (data) {},
+        });
+      });
+    </script>
+  </body>
+</html>

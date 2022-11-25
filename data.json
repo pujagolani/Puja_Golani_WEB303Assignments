@@ -1,0 +1,48 @@
+[
+  {
+    "id": "1",
+    "date": "11-05-2022",
+    "category":"thriller",
+    "firstname": "Joelle",
+    "lastname": "Kaufman",
+    "Production":"matt duffer",
+    "email": "joelle@mailinator.com"
+  },
+  {
+    "id": "2",
+    "date": "11-06-2022",
+    "category":"romantic",
+    "firstname": "Amit",
+    "lastname": "Sinha",
+    "Production":"DC",
+    "email": "amitsinha111o@mailinator.com"
+  },
+  {
+    "id": "3",
+    "date": "11-04-2022",
+    "category":"Animation",
+    "firstname": "Raj",
+    "lastname": "parmar",
+    "Production":"HIT ENT",
+    "email": "rajpar123@mailinator.com"
+  },
+  {
+    "id": "4",
+    "date": "10-05-2022",
+    "category":"Drama",
+    "firstname": "Vivek",
+    "lastname": "vaghela",
+    "Production":"ABC",
+    "email": "vivekvaghela12@mailinator.com"
+  },
+  {
+    "id": "5",
+    "date": "11-05-2021",
+    "category":"Adventure",
+    "firstname": "Kirti",
+    "lastname": "Chavda",
+    "Production":"Dharma",
+    "email": "kirtichavda@mailinator.com"
+  }
+]
+
