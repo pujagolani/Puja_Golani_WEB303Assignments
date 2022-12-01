@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <script type="module" type="text/javascript" src="js/script.js"></script>
+    <h1>
+      <!-- your name goes here -->
+    </h1>
+    <div class="container">
+      <form id="form" class="form">
+        <h2>Register With Us</h2>
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter Username" />
+          <small>Error Message</small>
+        </div>
+        <!-- <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter email" />
+          <small>Error Message</small>
+        </div> -->
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password" />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="password2">Confirm Password</label>
+          <input
+            type="password"
+            id="password2"
+            placeholder="Enter password again"
+          />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          Select a country:
+          <select id="selectCountries">
+            <option value="select country">Select your country</option>
+          </select>
+          <small></small>
+        </div>
+        <div class="form-control checkboxStyle" id="checkbox">
+          <input type="checkbox" id="terms_condition" class="checkboxInput" />
+          <label for="terms_condition"
+            >&nbsp; I accept the terms of service</label
+          >
+          <small></small>
+        </div>
+        <button type="submit" id="btn-submit">Submit</button>
+      </form>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+  </body>
+</html>
